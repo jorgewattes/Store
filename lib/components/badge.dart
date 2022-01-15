@@ -23,9 +23,11 @@ class Badge extends StatelessWidget {
           child: CircleAvatar(
             radius: 8,
             backgroundColor: color,
-            child: Text(
-              value,
-              style: TextStyle(fontSize: 12),
+            child: FittedBox(
+              child: Text(
+                value,
+                style: TextStyle(fontSize: 12),
+              ),
             ),
           ),
         )
